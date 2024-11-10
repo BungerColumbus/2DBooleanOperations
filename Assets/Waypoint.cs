@@ -4,7 +4,7 @@ namespace LinearAlgebra
 {
 
     // In this script we are going to see which waypoint is the player object closer to by using vector projection.
-    public class Waypoint : MonoBehaviour
+    public class Waypoint : VectorFormulas
     {
         public Transform player;
         public Transform debugObj;
@@ -35,13 +35,6 @@ namespace LinearAlgebra
             // The position of the debugObj is the vectorProjection added to the waypointFrom position.
             debugObj.position = progress * b + waypointFrom.position;
             
-        }
-
-
-        // A Vector3 method which returns the vector multiplication of 2 vectors
-        float vectorMultiplication(Vector3 vec1, Vector3 vec2)
-        {
-            return ((vec1.x * vec2.x) + (vec1.y * vec2.y) + (vec1.z * vec2.z));
         }
     }
 }
