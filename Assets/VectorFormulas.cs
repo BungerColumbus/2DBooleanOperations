@@ -15,5 +15,10 @@ namespace LinearAlgebra
         {
             return ((vec1.x * vec2.x) + (vec1.y * vec2.y) + (vec1.z * vec2.z));
         }
+
+        protected Vector2 vector2DNormal(Vector2 vec)
+        {
+            return new Vector2(-vec.y, vec.x);
+        }
     }
 }
